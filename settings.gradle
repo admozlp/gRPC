@@ -1,0 +1,5 @@
+rootProject.name = 'gRPC'
+include 'product-service'
+include 'eureka-server'
+include 'common-service'
+

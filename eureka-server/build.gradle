@@ -1,0 +1,4 @@
+dependencies {
+    implementation libs.springBootWeb
+    implementation libs.eurekaServer
+}
