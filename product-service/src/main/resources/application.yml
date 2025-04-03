@@ -3,6 +3,8 @@ spring:
     name: product-service
 server:
   port: 0
+  servlet:
+    context-path: /api
 
 eureka:
   instance:

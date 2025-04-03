@@ -1,11 +1,12 @@
 ext {
     versions = [
             springBoot             : "3.4.0",
-            lombok                 : "1.18.36",
+            lombok                 : "1.18.38",
             swagger                : "2.7.0",
             springCloudVersion     : "2024.0.0",
             swaggerWebflux         : "1.8.0",
-            "junitPlatformLauncher": "1.11.3"
+            "junitPlatformLauncher": "1.11.3",
+            flyway                 : "10.7.1"
     ]
 
     libs = [
@@ -23,5 +24,7 @@ ext {
             eurekaServer         : "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
             junitPlatformLauncher: "org.junit.platform:junit-platform-launcher:$versions.junitPlatformLauncher",
             springBootStarterTest: "org.springframework.boot:spring-boot-starter-test:$versions.springBoot",
+            flyway               : "org.flywaydb:flyway-core:$versions.flyway",
+            flywayPostgres       : "org.flywaydb:flyway-database-postgresql:$versions.flyway",
     ]
 }

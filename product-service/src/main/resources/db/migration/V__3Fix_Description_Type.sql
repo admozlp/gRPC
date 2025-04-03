@@ -1,0 +1,5 @@
+ALTER TABLE IF EXISTS products
+ALTER COLUMN description TYPE TEXT;
+
+ALTER TABLE IF EXISTS categories
+ALTER COLUMN description TYPE TEXT;

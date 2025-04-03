@@ -1,5 +1,9 @@
 dependencies {
-    implementation libs.eurekaClient
+    implementation project(':common-service')
     implementation libs.postgresql
-    implementation libs.jpa
+    implementation libs.flyway
+    implementation libs.flywayPostgres
+    annotationProcessor libs.lombok
 }
+
+compileJava.dependsOn(':common-service:compileJava')

@@ -1,10 +1,10 @@
 dependencies {
-    api libs.jpa
-    api libs.eurekaClient
     api libs.springBootWeb
+    api libs.eurekaClient
+    api libs.springCloud
+    api libs.jpa
     api libs.springBootValidation
     api libs.swagger
-    api libs.springCloud
     api libs.actuator
     api libs.lombok
     annotationProcessor libs.lombok
