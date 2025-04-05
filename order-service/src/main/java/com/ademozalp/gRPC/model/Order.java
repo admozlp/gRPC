@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Index;
 import jakarta.persistence.Table;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -17,7 +18,7 @@ import static com.ademozalp.grpc.util.DbConstant.ORDERS;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+@SuperBuilder
 @Table(name = ORDERS, indexes = @Index(name = "idx_order_number", columnList = "orderNumber"))
 @Entity
 public class Order extends BaseEntity {
