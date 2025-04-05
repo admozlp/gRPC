@@ -55,6 +55,20 @@ allprojects {
             mavenBom "org.springframework.cloud:spring-cloud-dependencies:${versions.springCloudVersion}"
         }
     }
+    dependencies {
+        implementation libs.springBootWeb
+        implementation libs.eurekaClient
+        implementation libs.springCloud
+        implementation libs.springBootValidation
+        implementation libs.swagger
+        implementation libs.actuator
+
+        compileOnly libs.lombok
+        annotationProcessor libs.lombok
+
+        testImplementation libs.springBootStarterTest
+        testRuntimeOnly libs.junitPlatformLauncher
+    }
 
     test {
         useJUnitPlatform()
