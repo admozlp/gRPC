@@ -4,4 +4,5 @@ include 'eureka-server'
 include 'common-service'
 include 'order-service'
 include 'apigw'
+include 'payment-service'
 

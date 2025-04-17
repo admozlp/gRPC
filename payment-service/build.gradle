@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(':common-service')
+    implementation libs.postgresql
+}
+
+compileJava.dependsOn(':common-service:compileJava')
