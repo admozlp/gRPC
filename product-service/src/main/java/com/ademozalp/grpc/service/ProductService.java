@@ -23,9 +23,9 @@ public class ProductService {
                 .map(ProductConverter::toResponse).toList();
     }
 
-    public BigDecimal getTotalPriceByProductIdList(List<Long> productIdList) {
-        List<Product> products = repository.findAllById(productIdList);
-        if (productIdList.size() != products.size()) {
+    public BigDecimal getTotalPriceByProductIdList(List<Long> productIds) {
+        List<Product> products = repository.findAllById(productIds);
+        if (productIds.size() != products.size()) {
             throw new ProductException("Some Product not found", HttpStatus.NO_CONTENT);
         }
 

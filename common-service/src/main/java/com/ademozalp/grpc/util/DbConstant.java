@@ -2,7 +2,6 @@ package com.ademozalp.grpc.util;
 
 public class DbConstant {
     private DbConstant() {
-
     }
 
     public static final String PRODUCTS = "products";
@@ -11,5 +10,6 @@ public class DbConstant {
     public static final String PRODUCT_ID = "product_id";
     public static final String CATEGORY_ID = "category_id";
     public static final String ORDERS = "orders";
+    public static final String PAYMENTS = "payments";
 
 }
